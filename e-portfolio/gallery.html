@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My E-Portfolio | Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>My <span>Portfolio</span></h1>
+            </div>
+            <nav>
+                <ul id="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="lifestyle.html">Lifestyle</a></li>
+                    <li><a href="gallery.html" class="active">Gallery</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="gallery-hero">
+        <div class="container">
+            <div class="gallery-hero-content">
+                <h1>My Gallery</h1>
+                <p>A visual showcase of my work, adventures, and interests</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery-filter">
+        <div class="container">
+            <div class="filter-options">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web-projects">Web Projects</button>
+                <button class="filter-btn" data-filter="design">Design Work</button>
+                <button class="filter-btn" data-filter="travel">Travel</button>
+                <button class="filter-btn" data-filter="creative">Creative</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery-main">
+        <div class="container">
+            <div class="gallery-grid">
+                <!-- Web Projects -->
+                <div class="gallery-item web-projects">
+                    <div class="gallery-image">
+                        <img src="images/pic13.jpg" alt="E-commerce Website">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>E-commerce Website</h3>
+                                <p>A fully responsive online store built with HTML, CSS, and JavaScript</p>
+                                <button class="btn-small gallery-view" data-id="1">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+               
+                </div>
+                <div class="gallery-item web-projects">
+                    <div class="gallery-image">
+                        <img src="images/pic14.jpg" alt="Blog Platform">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Blog Platform</h3>
+                                <p>A responsive blog template with dark mode toggle</p>
+                                <button class="btn-small gallery-view" data-id="3">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Design Work -->
+                <div class="gallery-item design">
+                    <div class="gallery-image">
+                        <img src="images/pic15.jpg" alt="Logo Design">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Brand Identity</h3>
+                                <p>Logo and brand identity for a local coffee shop</p>
+                                <button class="btn-small gallery-view" data-id="4">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                
+                    </div>
+                </div>
+
+                <!-- Travel -->
+                <div class="gallery-item travel">
+                    <div class="gallery-image">
+                        <img src="images/pic17-KL.jpg" alt="Kuala Lumpur Travel">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Kuala Lumpur, Malaysia</h3>
+                                <p>Exploring the vibrant streets and culture of Kuala Lumpur</p>
+                                <button class="btn-small gallery-view" data-id="7">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item travel">
+                    <div class="gallery-image">
+                        <img src="images/pic16-penang.jpg" alt="Penang Travel">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Penang, Malaysia</h3>
+                                <p>Discovering the rich history and street art of Penang</p>
+                                <button class="btn-small gallery-view" data-id="8">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                
+                    </div>
+                </div>
+
+                <!-- Creative -->
+                <div class="gallery-item creative">
+                    <div class="gallery-image">
+                        <img src="images/pic18-photograph.jpg" alt="Photography">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Urban Photography</h3>
+                                <p>A collection of urban landscape photographs</p>
+                                <button class="btn-small gallery-view" data-id="10">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item creative">
+                    <div class="gallery-image">
+                        <img src="images/pic19-digital art.jpg" alt="Digital Art">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Digital Illustrations</h3>
+                                <p>A series of digital art pieces exploring modern themes</p>
+                                <button class="btn-small gallery-view" data-id="11">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item creative">
+                    <div class="gallery-image">
+                        <img src="images/pic20-sketch.jpg" alt="Sketches">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Concept Sketches</h3>
+                                <p>Hand-drawn concept art and sketches</p>
+                                <button class="btn-small gallery-view" data-id="12">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="gallery-modal" id="gallery-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img src="images/pic21.jpg" alt="Project Image" id="modal-img">
+                </div>
+                <div class="modal-details">
+                    <h2 id="modal-title">Project Title</h2>
+                    <p id="modal-description">Project description will be displayed here.</p>
+                    <div class="modal-info">
+                        <div class="info-item">
+                            <h4>Date</h4>
+                            <p id="modal-date">January 2023</p>
+                        </div>
+                        <div class="info-item">
+                            <h4>Category</h4>
+                            <p id="modal-category">Web Development</p>
+                        </div>
+                        <div class="info-item">
+                            <h4>Tools Used</h4>
+                            <p id="modal-tools">HTML, CSS, JavaScript</p>
+                        </div>
+                    </div>
+                    <div class="modal-actions">
+                        <a href="#" class="btn" id="modal-link">View Live</a>
+                        <a href="#" class="btn btn-secondary" id="modal-github">View Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="video-gallery">
+        <div class="container">
+            <h2 class="section-title">Video Projects</h2>
+            <div class="video-grid">
+                <div class="video-item">
+                    <div class="video-container">
+                        
+                    <div class="video-info">
+                        <h3>Website Creation Process</h3>
+                        <p>A timelapse of my web development workflow from concept to completion</p>
+                    </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="interactive-map">
+        <div class="container">
+            <h2 class="section-title">Places I've Worked</h2>
+            <div class="map-container">
+                <div class="map-responsive">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127059.67519337486!2d100.39703399999999!3d6.4502267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304cae554e53ed7d%3A0x371121f0962cec87!2sUniversiti%20Utara%20Malaysia!5e0!3m2!1sen!2smy!4v1621234567890!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="map-locations">
+                    <div class="location-item">
+                        <div class="location-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="location-info">
+                            <h3>Universiti Utara Malaysia</h3>
+                            <p>Student Web Developer</p>
+                            <p>2022 - Present</p>
+                        </div>
+                    </div>
+                    <div class="location-item">
+                        <div class="location-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="location-info">
+                            <h3>Tech Solutions Inc.</h3>
+                            <p>Web Development Intern</p>
+                            <p>2024 - Present</p>
+                        </div>
+                    </div>
+                    <div class="location-item">
+                        <div class="location-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="location-info">
+                            <h3>Freelance Projects</h3>
+                            <p>Remote Work</p>
+                            <p>2022 - 2023</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="download-section">
+        <div class="container">
+            <h2 class="section-title">Download Resources</h2>
+            <div class="download-grid">
+                <div class="download-item">
+                    <div class="download-icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                    <div class="download-info">
+                        <h3>Resume/CV</h3>
+                        <p>Download my detailed resume in PDF format</p>
+                        <a href="#" class="btn-small">Download PDF</a>
+                    </div>
+                </div>
+                <div class="download-item">
+                    <div class="download-icon">
+                        <i class="fas fa-file-code"></i>
+                    </div>
+                    <div class="download-info">
+                        <h3>Code Samples</h3>
+                        <p>Collection of code snippets and examples</p>
+                        <a href="#" class="btn-small">Download ZIP</a>
+                    </div>
+                </div>
+                <div class="download-item">
+                    <div class="download-icon">
+                        <i class="fas fa-images"></i>
+                    </div>
+                    <div class="download-info">
+                        <h3>Design Portfolio</h3>
+                        <p>High-resolution versions of my design work</p>
+                        <a href="#" class="btn-small">Download ZIP</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contact Me</h3>
+                    <p><i class="fas fa-envelope"></i> ychalo803@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +60 11 5899 0620</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Changlun, Kedah, Malaysia</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="profile.html">Profile</a></li>
+                        <li><a href="lifestyle.html">Lifestyle</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 My E-Portfolio. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

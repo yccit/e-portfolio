@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My E-Portfolio | Lifestyle</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>My <span>Portfolio</span></h1>
+            </div>
+            <nav>
+                <ul id="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="lifestyle.html" class="active">Lifestyle</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="lifestyle-hero">
+        <div class="container">
+            <div class="lifestyle-hero-content">
+                <h1>My Lifestyle & Interests</h1>
+                <p>Exploring the balance between work, passion, and personal growth</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="lifestyle-intro">
+        <div class="container">
+            <div class="lifestyle-intro-content">
+                <div class="lifestyle-intro-text">
+                    <h2>Finding Balance</h2>
+                    <p>Beyond my professional life as a web developer, I believe in maintaining a balanced lifestyle that nurtures creativity and well-being. This page shares glimpses into my personal interests, hobbies, and the activities that keep me energized and inspired.</p>
+                    <p>From fitness routines that keep me physically active to creative pursuits that stimulate my mind, these aspects of my life contribute significantly to my professional performance and personal happiness.</p>
+                </div>
+                <div class="lifestyle-intro-image">
+                    <img src="images/pic7.jpg" alt="Lifestyle Image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="lifestyle-categories">
+        <div class="container">
+            <h2 class="section-title">Life Dimensions</h2>
+            <div class="category-tabs">
+                <div class="tab-buttons">
+                    <button class="tab-button active" data-tab="fitness">Fitness</button>
+                    <button class="tab-button" data-tab="travel">Travel</button>
+                    <button class="tab-button" data-tab="food">Food & Cooking</button>
+                    <button class="tab-button" data-tab="tech">Tech & Gadgets</button>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="fitness">
+                        <div class="tab-content-inner">
+                            <div class="tab-image">
+                                <img src="images/pic6.jpg" alt="Fitness Image">
+                            </div>
+                            <div class="tab-text">
+                                <h3>My Fitness Journey</h3>
+                                <p>Maintaining physical health is crucial for mental clarity and productivity. My fitness routine includes:</p>
+                                <ul>
+                                    <li>Morning runs 3-4 times per week</li>
+                                    <li>Strength training sessions</li>
+                                    
+                                    <li>Regular yoga practice for flexibility and mindfulness</li>
+                                </ul>
+                                <p>Staying active not only helps me maintain physical health but also enhances my problem-solving abilities and creativity in my web development work.</p>
+                                <div class="fitness-stats">
+                                    <div class="stat">
+                                        <h4>30+</h4>
+                                        <p>Workout Sessions</p>
+                                    </div>
+                                    <div class="stat">
+                                        <h4>15</h4>
+                                        <p>Hiking Trails</p>
+                                    </div>
+                                    <div class="stat">
+                                        <h4>1</h4>
+                                        <p>Marathons</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="travel">
+                        <div class="tab-content-inner">
+                            <div class="tab-image">
+                                <img src="images/pic1.jpg" alt="Travel Image">
+                            </div>
+                            <div class="tab-text">
+                                <h3>Exploring the World</h3>
+                                <p>Traveling broadens my perspective and inspires my creativity. Some of my favorite destinations include:</p>
+                                <ul>
+                                    <li>The vibrant streets of Kuala Lumpur, Malaysia</li>
+                                    <li>The breathtaking landscapes of Langkawi Island</li>
+                                    <li>The rich culture of Penang</li>
+                                    <li>The beautiful beaches of Sabah</li>
+                                </ul>
+                                <p>Every travel experience influences my design aesthetic and problem-solving approach in unique ways.</p>
+                                <div class="travel-map">
+                                    <h4>Places I've Visited</h4>
+                                    <div class="map-container">
+                                        <img src="images/pic8.jpg" alt="Travel Map">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="food">
+                        <div class="tab-content-inner">
+                            <div class="tab-image">
+                                <img src="images/pic9.jpg" alt="Food Image">
+                            </div>
+                            <div class="tab-text">
+                                <h3>Culinary Adventures</h3>
+                                <p>Cooking is both a creative outlet and a way to connect with cultures around the world. My culinary interests include:</p>
+                                <ul>
+                                    <li>Experimenting with traditional Malaysian recipes</li>
+                                    <li>Weekend baking projects</li>
+                                    <li>Exploring local food markets</li>
+                                    <li>Hosting dinner gatherings with friends</li>
+                                </ul>
+                                <p>The creative process of cooking closely resembles my approach to web development—both require experimentation, precision, and a touch of artistic flair.</p>
+                                <div class="recipe-share">
+                                    <h4>Featured Recipe</h4>
+                                    <div class="recipe-card">
+                                        <h5>Homemade Nasi Lemak</h5>
+                                        <div class="recipe-details">
+                                            <span><i class="fas fa-clock"></i> 45 minutes</span>
+                                            <span><i class="fas fa-utensils"></i> 4 servings</span>
+                                            <span><i class="fas fa-pepper-hot"></i> Spicy</span>
+                                        </div>
+                                        <a href="#" class="btn-small">View Recipe</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="tech">
+                        <div class="tab-content-inner">
+                            <div class="tab-image">
+                                <img src="images/pic10.jpg" alt="Tech Image">
+                            </div>
+                            <div class="tab-text">
+                                <h3>Tech Enthusiast</h3>
+                                <p>Beyond professional web development, I'm passionate about the broader tech world. My interests include:</p>
+                                <ul>
+                                    <li>Smart home automation projects</li>
+                                    <li>Following developments in AI and machine learning</li>
+                                    <li>Exploring VR/AR applications</li>
+                                    <li>Testing and reviewing new gadgets</li>
+                                </ul>
+                                <p>Staying current with emerging technologies helps me anticipate trends and incorporate innovative solutions in my development work.</p>
+                                <div class="tech-favorites">
+                                    <h4>Current Tech Setup</h4>
+                                    <div class="tech-items">
+                                        <div class="tech-item">
+                                            <i class="fas fa-laptop"></i>
+                                            <span>MacBook Pro M2</span>
+                                        
+                                        </div>
+                                        <div class="tech-item">
+                                            <i class="fas fa-keyboard"></i>
+                                            <span>Mechanical Keyboard</span>
+                                        </div>
+                                        <div class="tech-item">
+                                            <i class="fas fa-headphones"></i>
+                                            <span>Noise-Cancelling Headphones</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="social-feed">
+        <div class="container">
+            <h2 class="section-title">Social Media Updates</h2>
+            <div class="social-container">
+                <div class="social-tabs">
+                    <button class="social-tab active" data-social="instagram"><i class="fab fa-instagram"></i> Instagram</button>
+                    <button class="social-tab" data-social="twitter"><i class="fab fa-twitter"></i> Twitter</button>
+                </div>
+                <div class="social-content">
+                    <div class="social-feed-content active" id="instagram-feed">
+                        <div class="social-grid">
+                            <div class="social-item">
+                                <img src="images/pic11.jpg" alt="Instagram Post 1">
+                                <div class="social-overlay">
+                                    <div class="social-stats">
+                                        <span><i class="fas fa-heart"></i> 145</span>
+                                        <span><i class="fas fa-comment"></i> 12</span>
+                                    </div>
+                                </div>
+                          
+                        </div>
+                        <div class="social-follow">
+                            <a href="#" class="btn"><i class="fab fa-instagram"></i> Follow on Instagram</a>
+                        </div>
+                    </div>
+                    <div class="social-feed-content" id="twitter-feed">
+                        <div class="twitter-timeline">
+                            <div class="tweet">
+                                <div class="tweet-header">
+                                    <img src="images/pic12.jpg" alt="Profile Picture" class="tweet-avatar">
+                                    <div class="tweet-user">
+                                        <h4>YEOH CHONG CHAO</h4>
+                                        <span>@ycc_1110</span>
+                                    </div>
+                                    <div class="tweet-time">2h</div>
+                                </div>
+                                <div class="tweet-content">
+                                    <p>Just finished an amazing UI design for a new client project! Can't wait to share more details soon. #WebDesign #UIDesign</p>
+                                </div>
+                                <div class="tweet-actions">
+                                    <span><i class="far fa-comment"></i> 4</span>
+                                    <span><i class="fas fa-retweet"></i> 12</span>
+                                    <span><i class="far fa-heart"></i> 45</span>
+                                </div>
+                            </div>
+                            
+                            </div>
+                        </div>
+                        <div class="social-follow">
+                            <a href="#" class="btn"><i class="fab fa-twitter"></i> Follow on Twitter</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="community-interaction">
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
+            <div class="interaction-content">
+                <div class="interaction-section poll-section">
+                    <h3>Quick Poll</h3>
+                    <div class="poll">
+                        <h4>What tech topic interests you most?</h4>
+                        <form id="poll-form" class="poll-options">
+                            <div class="poll-option">
+                                <input type="radio" id="web-dev" name="tech-poll" value="web-dev">
+                                <label for="web-dev">Web Development</label>
+                            </div>
+                            <div class="poll-option">
+                                <input type="radio" id="ai" name="tech-poll" value="ai">
+                                <label for="ai">Artificial Intelligence</label>
+                            </div>
+                            <div class="poll-option">
+                                <input type="radio" id="mobile" name="tech-poll" value="mobile">
+                                <label for="mobile">Mobile App Development</label>
+                            </div>
+                            <div class="poll-option">
+                                <input type="radio" id="ux" name="tech-poll" value="ux">
+                                <label for="ux">UX/UI Design</label>
+                            </div>
+                            <button type="submit" class="btn-small" id="poll-submit">Vote</button>
+                        </form>
+                        <div id="poll-results" class="poll-results" style="display: none;">
+                            <h4>Results:</h4>
+                            <div class="poll-result">
+                                <span>Web Development</span>
+                                <div class="result-bar">
+                                    <div class="result-fill" style="width: 45%;"></div>
+                                </div>
+                                <span>45%</span>
+                            </div>
+                            <div class="poll-result">
+                                <span>Artificial Intelligence</span>
+                                <div class="result-bar">
+                                    <div class="result-fill" style="width: 30%;"></div>
+                                </div>
+                                <span>30%</span>
+                            </div>
+                            <div class="poll-result">
+                                <span>Mobile App Development</span>
+                                <div class="result-bar">
+                                    <div class="result-fill" style="width: 15%;"></div>
+                                </div>
+                                <span>15%</span>
+                            </div>
+                            <div class="poll-result">
+                                <span>UX/UI Design</span>
+                                <div class="result-bar">
+                                    <div class="result-fill" style="width: 10%;"></div>
+                                </div>
+                                <span>10%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="interaction-section comment-section">
+                    <h3>Leave a Comment</h3>
+                    <form id="comment-form" class="comment-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Submit Comment</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contact Me</h3>
+                    <p><i class="fas fa-envelope"></i> ychalo803@gmail.com.com</p>
+                    <p><i class="fas fa-phone"></i> +60 11 5899 0620</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Changlun, Kedah, Malaysia</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="profile.html">Profile</a></li>
+                        <li><a href="lifestyle.html">Lifestyle</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 My E-Portfolio. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
